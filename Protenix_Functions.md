@@ -50,4 +50,24 @@ protenix pred \
   -s 101,102,103
 ```
 
+> **04 蛋白质结构预测 -- |批量|远程 MSA|自定义 cycle/step/sample|**
+
+`-c / -p / -e` 为自定义采样参数，调小可大幅提速，但牺牲质量
+
+| 参数          | 默认值 | 含义                       |
+| :------------ | :----: | :------------------------- |
+| `-c` / cycle  |   10   | Pairformer 循环次数        |
+| `-p` / step   |  200   | 扩散去噪步数               |
+| `-e` / sample |   5    | 每个 seed 采样的候选结构数 |
+
+```bash
+CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=2 \
+protenix pred \
+  -i /data/lmk/protenix_inputs \
+  -o /data/lmk/protenix_outputs \
+  -c 50 \
+  -p 500 \
+  -e 10
+```
+
 ##### [Protenix 官方仓库](https://github.com/bytedance/Protenix)

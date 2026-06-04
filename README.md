@@ -18,7 +18,7 @@
 | [Protenix_Setup.md](./Protenix_Setup.md)             | conda 环境创建、pip 安装、PROTENIX_ROOT_DIR 缓存目录、输入输出目录 |
 | [Protenix_Functions.md](./Protenix_Functions.md)     | Protenix 各项功能的实现与使用笔记                                  |
 | [Protenix_JSON_Format.md](./Protenix_JSON_Format.md) | Protenix 输入 JSON 的常见格式说明                                  |
-| [input_data/](./input_data/)                         | 输入 JSON                                                          |
+| [input_data/](./input_data/)                         | 示例输入                                                           |
 
 ---
 
